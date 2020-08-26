@@ -1,5 +1,11 @@
 # Module Project: Component Side Effects- NASA APOD
 
+App.js: Axios api call is made to the NASA.gov api within an async function that fetches the necessary image data. 
+
+The random image retrieved from the api is rendered along with the title of the image, a caption or 'explanation' as well as the date it was captured. 
+
+
+
 This will be a two-module project. In it you will consume the NASA API to fetch the "Astronomy Photo Of The Day" or APOD. Once you fetch the data, you will build a few components that will render different pieces of data in your interface. After the second module (in the [DAY_TWO_README.md](DAY_TWO_README.md) file) you will re-style your app using one of the libraries you learn. 
 
 ## Instructions
