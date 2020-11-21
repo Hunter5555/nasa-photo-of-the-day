@@ -25,7 +25,7 @@ function App() {
       <h2>{nasaImg.title}</h2>
       <h2>{nasaImg.date}</h2>
       <p>{nasaImg.explanation}</p>
-      <img src={`${nasaImg.url}`} />
+      <img src={`${nasaImg.url}`}  alt="nasa-img"/>
     </div>
   );
 }
