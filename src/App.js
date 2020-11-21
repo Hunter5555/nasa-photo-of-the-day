@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const nasaData = await axios.get('https://api.nasa.gov/planetary/apod?api_key=NAiBVbBWUEMwQapNNOSb7drcvy0f0vTdYpF1aRmP')
+        const nasaData = await axios.get('https://api.nasa.gov/planetary/apod?api_key=pr8QVBO5MwklPsjdyrU2ztTEjxLodsU0Zm99fjXW')
         console.log(nasaData);
         setImg(nasaData.data);
       }
