@@ -5,7 +5,7 @@
   align-items: center ;
   background: linear-gradient(#020202, #252a5e);
   color: white;
-  min-height: auto;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -29,11 +29,53 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  animation: down-enter .7s ease-out .4s;
   }
-  to {
-    transform: rotate(360deg);
+
+  img{
+    max-width: 40%;
+    margin-bottom: 5%;
   }
+
+  .description{
+    padding: 10rem;
+    max-width: 30%;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+  }
+  a:active{
+    color:white;
+  }
+
+  a:hover{
+    color: mediumaquamarine;
+  }
+
+@media screen and (max-width: 750px){
+  .content{
+    align-items: center;
+    flex-direction: column;
+    padding: none;
+    margin: none;
+  }
+  img{
+    min-width: 75%;
+  }
+  .description{
+    padding: 2rem;
+    min-width: 75%;
+  }
+}
+
+.down-enter-active { animation: 1s down-enter; }
+@keyframes down-enter {
+  0% { clip-path: inset(0 0 100% 0); }
+  100% { clip-path: inset(0); }
 }

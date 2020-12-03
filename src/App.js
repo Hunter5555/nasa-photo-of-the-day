@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from 'axios';
 
-
 function App() {
   const [nasaImg, setImg] = useState(0);
   
@@ -24,9 +23,14 @@ function App() {
     <div className="App">
       <h2>{nasaImg.title}</h2>
       <h3>{nasaImg.date}</h3>
-      <img src={`${nasaImg.url}`}  alt="nasa-img"/>
-      <p style={{maxWidth:"80%"}}>{nasaImg.explanation}</p>
-    </div>
+        <div className="content">
+          <img src={`${nasaImg.url}`}  alt="nasa-img"/>
+          <div className="description">
+          {nasaImg.explanation} 
+          <a href="https://www.nasa.gov/multimedia/imagegallery/iotd.html"> Learn More</a>
+          </div>
+        </div>
+      </div>
   );
 }
 
